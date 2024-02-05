@@ -58,3 +58,39 @@ const MyFunctions = function(){
 // console.log(typeof MyFunctions);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+//Stack (Primitive DataType) , Heap (Non-Primitive DataType)
+
+//Stack - Copy
+//Heap - Reference 
+
+let myChannel = "CodeWithAdi"
+
+let another = myChannel
+
+// console.log(another);
+
+another = "ChaiWithAdi";
+
+// console.log(another);
+
+// console.log(myChannel);
+
+let userOne = {
+    email : "adi@google.com" , 
+    upi : "90@ybi"
+}
+
+// console.log(userOne);
+
+let useTwo = userOne;
+// console.log(useTwo);
+
+useTwo.email= "Raghu@google.com"
+
+console.log(userOne.email);
+
+console.log(useTwo.email);
