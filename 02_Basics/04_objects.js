@@ -61,3 +61,30 @@ User[1].emai
 // console.log(Object.entries(tinderUser));
 
 // console.log(tinderUser.hasOwnProperty('id'));
+
+const Detail = {
+    first:"Aditya",
+    last:"Dhanorkar",
+    roll:119
+}
+
+Detail.roll
+console.log(Detail.last);
+const {last} = Detail
+// console.log(last);
+
+const {first : name} = Detail
+// console.log(name);
+
+//+++++++++++++JSON++++++++++++++++++
+// {
+//     "name":"Aditya",
+//     "First": "Raghu",
+//     "Last" : "Dhanorkar"
+// }
+
+[
+    {},
+    {},
+    {}
+]
