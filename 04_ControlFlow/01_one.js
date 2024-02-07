@@ -60,3 +60,7 @@
 // else{
 //     console.log("Score Is Equal to Score");
 // }
+
+//Implicite If
+// let mark = 35
+// if(mark >=30) console.log("Pass"),console.log("Upgrade Your self");
