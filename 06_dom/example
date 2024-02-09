@@ -1,0 +1,168 @@
+tittle.textContent
+'Coffee With Adi Patil'
+tittle.innerText
+'Coffee With Adi'
+tittle.innerHTML
+'Coffee With Adi <span style="display: none;">Patil</span>'
+document.querySelector('tittle')
+null
+document.querySelector('h1')
+<h1 id=​"tittle" class=​"heading">​"Coffee With Adi "<span style=​"display:​ none;​">​Patil​</span>​</h1>​
+document.querySelector('h2')
+<h2>​Lorem, ipsum dolor.​</h2>​
+document.querySelector('.heading')
+<h1 id=​"tittle" class=​"heading">​…​</h1>​
+document.querySelector('#tittle')
+<h1 id=​"tittle" class=​"heading">​…​</h1>​
+document.querySelector('input[type = "password"]')
+<input type=​"password">​
+document.querySelector(ul)
+VM1789:1 Uncaught ReferenceError: ul is not defined
+    at <anonymous>:1:24
+(anonymous) @ VM1789:1
+document.querySelector('ul')
+<ul>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+const myul =document.querySelector('ul')
+undefined
+myul
+<ul>​…​</ul>​
+document.querySelector('ol')
+null
+document.querySelector('p')
+<p>​Lorem ipsum dolor sit amet.​</p>​
+myul
+<ul>​…​</ul>​
+myul.querySelector('li')
+<li>​…​</li>​
+const myli = myul.querySelector('li')
+undefined
+my.style.backgroundcolor='red'
+VM2263:1 Uncaught ReferenceError: my is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2263:1
+myli
+<li>​…​</li>​
+myli.style.backgroundColor='red'
+'red'
+myli.textContent
+'one'
+myli.innerHTML ='Zero'
+'Zero'
+myli.innerText ='Zero'
+'Zero'
+myli.innerText ='Five'
+'Five
+
+****************QuerySelectorAll*******************
+
+document.querySelectorAll('ul')
+NodeList [ul]0: ullength: 1[[Prototype]]: NodeList
+document.querySelectorAll('li')
+NodeList(3) [li, li, li]0: li1: li2: lilength: 3[[Prototype]]: NodeListentries: ƒ entries()forEach: ƒ forEach()item: ƒ item()keys: ƒ keys()length: (...)values: ƒ values()constructor: ƒ NodeList()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "NodeList"get length: ƒ length()[[Prototype]]: Object
+const lilist = document.querySelectorAll('li')
+undefined
+lilist
+NodeList(3) [li, li, li]
+lilist.style.color='red'
+VM2830:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:19
+(anonymous) @ VM2830:1
+lilist[0].style.color='red'
+'red'
+document.querySelectorAll('h1')
+NodeList [h1#tittle.heading]0: h1#tittle.headinglength: 1[[Prototype]]: NodeList
+const head = document.querySelectorAll('h1')
+undefined
+head
+NodeList [h1#tittle.heading]
+head.style.backgroundcolor='red'
+VM3076:1 Uncaught TypeError: Cannot set properties of undefined (setting 'backgroundcolor')
+    at <anonymous>:1:27
+(anonymous) @ VM3076:1
+head[0].style.backgroundcolor='red'
+'red'
+head[0].style.backgroundColor='red'
+'red'
+lilist
+NodeList(3) [li, li, li]
+lilist.forEach(function(l){
+    l.backgroundcolor='green'
+})
+undefined
+lilist.forEach(function(l){
+    l.style.backgroundcolor='green'
+})
+undefined
+lilist.forEach(function(l){
+    l.style.backgroundColor = 'green'
+})
+undefined
+lilist.forEach(function(l){
+    l.style.backgroundColor='pink'
+})
+
+
+************GetElementBYClassName***************
+
+************HTMLCOLLECTION**********************
+document.getElementsByClassName('patil')
+HTMLCollection(5) [li.patil, li.patil, li.patil, li.patil, li.patil]0: li.patil1: li.patil2: li.patil3: li.patil4: li.patillength: 5[[Prototype]]: HTMLCollectionitem: ƒ item()length: (...)namedItem: ƒ namedItem()constructor: ƒ HTMLCollection()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.toStringTag): "HTMLCollection"get length: ƒ length()[[Prototype]]: Object
+const mypatil = document.getElementsByClassName('patil')
+undefined
+mypatil
+HTMLCollection(5) [li.patil, li.patil, li.patil, li.patil, li.patil]
+mypatil.forEach(function (li) {
+    console.log(li)    
+})
+VM4411:1 Uncaught TypeError: mypatil.forEach is not a function
+    at <anonymous>:1:9
+(anonymous) @ VM4411:1
+Array.from(mypatil)
+(5) [li.patil, li.patil, li.patil, li.patil, li.patil]
+const myarr =Array.from(mypatil)
+undefined
+myarr
+(5) [li.patil, li.patil, li.patil, li.patil, li.patil]0: li.patil1: li.patil2: li.patil3: li.patil4: li.patillength: 5[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+
+
+myarr.forEach(function(li){
+    li.style.backgroundColor='orange'
+})
+
+
+*******************Console Practice***************
+const myh3=document.querySelectorAll('.mw-headline')
+undefined
+myh3
+NodeList(75) [span#History.mw-headline, span#Creation_at_Netscape.mw-headline, span#Adoption_by_Microsoft.mw-headline, span#The_rise_of_JScript.mw-headline, span#Growth_and_standardization.mw-headline, span#Reaching_maturity.mw-headline, span#Trademark.mw-headline, span#Website_client-side_usage.mw-headline, span#Examples_of_scripted_behavior.mw-headline, span#Web_libraries_and_frameworks.mw-headline, span#React.mw-headline, span#Angular.mw-headline, span#jQuery.mw-headline, span#Vanilla_JS.mw-headline, span#Other_usage.mw-headline, span#Execution_system.mw-headline, span#Just-in-time_compilation.mw-headline, span#JavaScript_engine.mw-headline, span#Run-time_environment.mw-headline, span#Examples.mw-headline, span#Node.js.mw-headline, span#Deno.mw-headline, span#Features.mw-headline, span#Imperative_and_structured.mw-headline, span#Weakly_typed.mw-headline, span#Dynamic.mw-headline, span#Typing.mw-headline, span#Run-time_evaluation.mw-headline, span#Object-orientation_(prototype-based).mw-headline, span#Prototypes.mw-headline, span#Functions_as_object_constructors.mw-headline, span#Functions_as_methods.mw-headline, span#Functional.mw-headline, span#Lexical_closure.mw-headline, span#Anonymous_function.mw-headline, span#Delegative.mw-headline, span#Functions_as_roles_(Traits_and_Mixins).mw-headline, span#Object_composition_and_inheritance.mw-headline, span#Miscellaneous.mw-headline, span#Zero-based_numbering.mw-headline, span#Variadic_functions.mw-headline, span#Array_and_object_literals.mw-headline, span#Regular_expressions.mw-headline, span#Promises_and_Async/await.mw-headline, span#Promises.mw-headline, span#Async/await.mw-headline, span#Vendor-specific_extensions.mw-headline, span#Syntax.mw-headline, span#Simple_examples.mw-headline, span#More_advanced_example.mw-headline, span#Security.mw-headline, span#Cross-site_vulnerabilities.mw-headline, span#Cross-site_scripting.mw-headline, span#Cross-site_request_forgery.mw-headline, span#Misplaced_trust_in_the_client.mw-headline, span#Misplaced_trust_in_developers.mw-headline, span#Browser_and_plugin_coding_errors.mw-headline, span#Sandbox_implementation_errors.mw-headline, span#Hardware_vulnerabilities.mw-headline, span#Development_tools.mw-headline, span#Static_program_analysis.mw-headline, span#ESLint.mw-headline, span#JSLint.mw-headline, span#Code_incompatibility.mw-headline, span#Related_technologies.mw-headline, span#Java.mw-headline, span#JSON.mw-headline, span#TypeScript.mw-headline, span#WebAssembly.mw-headline, span#Transpilers.mw-headline, span#Ajax.mw-headline, span#References.mw-headline, span#Sources.mw-headline, span#Further_reading.mw-headline, span#External_links.mw-headline]
+myh3.innerText
+undefined
+myh3[0].innerText
+'History'
+my[5].innerText
+VM2409:1 Uncaught ReferenceError: my is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM2409:1
+myh3[5].innerText
+'Reaching maturity'
+myh3.forEach(function(li){
+    li.style.color ='red'
+})
+undefined
+myh3.forEach(function(li){
+    li.style.color ='black'
+    li.style.backgroundColor ='Orange'
+    li.style.padding='10px'
+})
+undefined
+myh3.forEach(function(li){
+    li.style.color ='black'
+    li.style.backgroundColor ='Orange'
+    li.style.padding='10px'
+})
+undefined
+myh3.forEach(function(li){
+    li.style.color ='black';
+    li.style.backgroundColor='Orange';
+    li.innerText='Aditya'
+})
