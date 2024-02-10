@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM || Coffee With Adi </title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <!-- COmment -->
+    <div class="day">MonDay</div>
+    <div class="day">TuesDay</div>
+    <div class="day">WednesDay</div>
+    <div class="day">ThursDay</div>
+    <div class="day">FriDay</div>
+    <div class="day">SaturDay</div>
+    <div class="day">SunDay</div>
+</div>
+</body>
+    <script>
+        
+        const parent = document.querySelector('.parent')
+        // console.log(parent);
+        // console.log(parent.children);
+        // console.log(parent.children[0].innerHTML);
+        // console.log(parent.children[5].innerText);
+        // console.log(parent.children[3].textContent);
+
+        // for (let index = 0; index < parent.children.length; index++) {
+        //     console.log(parent.children[index].innerHTML)
+            
+        // }
+        const firstchild = parent.firstElementChild
+        firstchild.style.backgroundColor='orange';firstchild.style.color ='blue'
+        // console.log(firstchild.textContent);
+        // console.log(parent.lastElementChild);
+       
+       
+        // ******** Approch Parent Thr Child
+
+        const dayOne = document.querySelector('.day')
+        // console.log(dayOne);
+        // console.log(dayOne.parentElement);
+        // console.log(dayOne.nextElementSibling);
+
+        // console.log("NODES :",parent.childNodes);//IMP
+    </script>
+</html>
