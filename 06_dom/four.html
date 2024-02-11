@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee With Adi || DOM</title>
+</head>
+<body>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(lang){
+        const li = document.createElement('li')
+        li.innerHTML = `${lang}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage('Java')
+
+    function addOptiLanguage(lang){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(lang))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptiLanguage('HTML')
+    addOptiLanguage('CSS')
+
+    //EDIT
+
+    const secondLang = document.querySelector('li:nth-child(2)')
+    console.log(secondLang);
+    // secondLang.innerHTML='AI - ML'
+    //OR
+    const other=document.createElement('li')
+    other.textContent='Swift'
+    secondLang.replaceWith(other)
+
+    //OR
+    const firstLAng = document.querySelector('li:first-child')
+    firstLAng.outerHTML='<li> Ruby </li>'
+
+    //REMOVE
+
+    const lastLang = document.querySelector('li:last-child')
+    // lastLang.remove()
+</script>
+</html>
