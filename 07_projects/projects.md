@@ -22,24 +22,9 @@
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a target="_blank" href="https://www.youtube.com/@chaiaurcode"
-        >Youtube channel</a
-      >
-    </nav>
+       <h2>Aditya Dhanorkar</h2>
+      </nav>
     <div class="canvas">
-      <!-- <a
-        style="
-          background-color: #fff;
-          padding: 10px 30px;
-          border-radius: 8px;
-          color: #212121;
-          text-decoration: none;
-          border: 2px solid #212121;
-        "
-        href="../index.html"
-        >Back to Home Page</a
-      > -->
       <h1>Color Scheme Switcher</h1>
       <span class="button" id="grey"></span>
       <span class="button" id="white"></span>
@@ -53,9 +38,12 @@
     <script src="chaiaurcode.js"></script>
   </body>
 </html>
+
 ```
 ```CSS```
 ```css
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+
 html {
   margin: 0;
 }
@@ -89,6 +77,10 @@ span {
 #yellow {
   background: yellow;
 }
+nav>h2{
+  font-family: 'Protest Riot', sans-serif;
+}
+
 ```
  ```JavaScript```
  ```JavaScript
