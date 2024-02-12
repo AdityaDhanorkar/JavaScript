@@ -35,7 +35,7 @@
         <span>to change the background color of this page!</span>
       </h2>
     </div>
-    <script src="Coffee With Adi"></script>
+    <script src="Coffee With Adi.js"></script>
   </body>
 </html>
 
