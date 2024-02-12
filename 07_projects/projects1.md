@@ -1,4 +1,4 @@
-# Project 1 Solution
+# Project Related To DOM
 
 ## Project link
 [click here]()
@@ -35,7 +35,7 @@
         <span>to change the background color of this page!</span>
       </h2>
     </div>
-    <script src="chaiaurcode.js"></script>
+    <script src="Coffee With Adi"></script>
   </body>
 </html>
 
@@ -112,5 +112,5 @@ buttons.forEach((button)=>{
     }
   })
 });
-```
+
  
