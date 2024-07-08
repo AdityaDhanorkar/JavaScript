@@ -1,8 +1,8 @@
 //Immediately Invoked Function Expressions
 
-(function Coffe(){
-    console.log(`Hi Aditya How Are You`);
-})(); //Named IIFE 
+// (function Coffe(){
+//     console.log(`Hi Aditya How Are You`);
+// })(); //Named IIFE 
 // Coffe()
 
 //IIFE On Arrow Function

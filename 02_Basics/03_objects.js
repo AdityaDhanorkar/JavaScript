@@ -3,6 +3,7 @@
 //Object Literals
 
 const sym = Symbol("key1")
+// const location = Symbol("Pune")
 const JsUser = {
     name:"Aditya",
     "full Name":"Raghu Patil",
@@ -17,6 +18,9 @@ const JsUser = {
 // console.log(JsUser["email"]);
 // console.log(JsUser["full Name"]);
 // console.log(JsUser[sym]);
+// console.log(JsUser.age)
+// console.log(JsUser[location])
+
 
 JsUser.email = "Raghu@google.com"
 // console.log(JsUser["email"]);

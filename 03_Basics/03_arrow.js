@@ -13,20 +13,20 @@ user.welCome()
 
 // console.log(this);
 
-// function chai(){
-//     let name = "Aditya"
-//     console.log(this.name)
-// }
+function chai(){
+    let name = "Aditya"
+    console.log(this.name)
+}
 // const chai = function(){
 //     let name = "Aditya"
 //     console.log(this);
 // }
 
 //Arrow Funnctions
-const chai = () => {
-    let name = "Aditya"
-    console.log(this);
-}
+// const chai = () => {
+//     let name = "Aditya"
+//     console.log(this);
+// }
 
 // chai()
 
@@ -37,4 +37,4 @@ const chai = () => {
 
 const addTwo = (num1 , num2) => ({userName:"Raghu"})
 
-console.log(addTwo(3 , 5));
+// console.log(addTwo(3 , 5));

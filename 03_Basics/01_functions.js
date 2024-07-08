@@ -24,12 +24,12 @@ function myName() {
 // function addTwoNumber(number1 , number2){
 //     return (number1 + number2)
 // }
-function addTwoNumber(number1 , number2){
-    let result = number1 + number2 
-    return result
-}
+// function addTwoNumber(number1 , number2){
+//     let result = number1 + number2 
+//     return result
+// }
 
-const result = addTwoNumber(3 , 8)
+// const result = addTwoNumber(3 , 8)
 // console.log("Results :" , result);
 
 function UserLogin(username = "Patil"){
@@ -52,9 +52,9 @@ function UserLogin(username = "Patil"){
 //     return num1
 // }
 
-function CartCalculation(value1 , value2 ,...num1) {
-    return num1
-}
+// function CartCalculation(value1 , value2 ,...num1) {
+//     return num1
+// }
 
 // console.log(CartCalculation(200 , 400 , 500 ,1000));
 
@@ -77,8 +77,8 @@ function handleObject(getObject){
 const myArr = [200 ,400 ,600,1000]
 
 function handleArray(getArray){
-    return getArray[2]
+    return getArray[3]
 }
 
 // console.log(handleArray(myArr))
-console.log(handleArray([200 , 400 ,600 ,1000]));
+console.log(handleArray([200 , 400 ,600 ,1000])));

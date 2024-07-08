@@ -1,6 +1,6 @@
-// var a = 10
+var a = 10
 let b = 20
-// const c = 30
+const c = 30
 
 // console.log(a);
 // console.log(b);
@@ -8,8 +8,8 @@ let b = 20
 if(true)
 {
     let b = 200
-    // const c = 60
-    // var a = 40
+    const c = 60
+    var a = 40
     // console.log("Inner :" ,b);
 }
 
@@ -23,9 +23,9 @@ function UserName()  {
 
      function Channel(){
         const ChannelName = "Coffe With Adi"
-        // console.log(usr);
+        console.log(usr);
      }
-     Channel()
+    //  Channel()
     //  console.log(ChannelName);
 
 }
