@@ -17,20 +17,15 @@
         // setInterval(sayDate,2000,'Patil')
        let intervalId;
         document.querySelector('#start').addEventListener('click',function(){
-          if(!intervalId){
-            const intervalId = setInterval(()=>{
+             intervalId = setInterval(say , 1000)
+             function say(){
                 console.log("Hi Aditya",Date.now());
-            },1000)
-        }
+            }
         },false);
        
         document.querySelector('#stop').addEventListener('click',function(){
-         if(intervalId){
             console.log("Stop")
             clearInterval(intervalId);
-            intervalId=nulll
-         }
-           
         })
     </Script>
 </html>
