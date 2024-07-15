@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poject On Api</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    <span id="name"></span>
+    <button id="Detail">Detail </button>
+</body>
+<script>
+    const requestURL = 'https://api.github.com/users/AdityaDhanorkar'
+    let name1 = document.getElementById('h1');
+    let start =document.getElementById('name')
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestURL)
+    console.log(xhr.readyState);
+    xhr.onreadystatechange=function(){
+        const data = JSON.parse(this.responseText)
+        function card (){
+            name1.innerHTML=data.name;
+            start.innerHTML=data.created_at
+        }
+        document.getElementById('Detail').addEventListener('click',card())
+}
+    xhr.send();
+</script>
+</html>
