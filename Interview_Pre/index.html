@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .container{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            text-align: center;
+        }
+        .button {
+            width: 200px;
+            height: 60px;
+            font-size: 30px;
+            display: block;
+            margin: 10px auto;
+            border:2px solid black;
+            border-radius: 9px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Counter Increment and Decrement</h1>
+        <button class="button" id="btn_in">Increment</button>
+        <h2 id="res"></h3>
+        <button class="button" id="btn_de">Decrement</button>
+    </div>
+</body>
+    <script>
+        let data =0
+        document.getElementById('res').innerHTML=data
+        document.getElementById('btn_in').addEventListener('click',()=>{
+            data = data+1
+            document.getElementById('res').innerHTML=data
+        })
+        document.getElementById('btn_de').addEventListener('click',()=>{
+            data = data-1
+            document.getElementById('res').innerHTML=data
+        })
+        
+    </script>
+</html>
